@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <form action=""> <!--le dice al ordenador que aqui va a ver un formulario y que el usuario va a dejar informacion-->
+        <label for="nombre"> <!--es un contenedor donde dentro estara la pregunta-->
+           <p>1 <span>Cual es tu nombre?</span>  </p><!--le muestra al usuario que debe poner en cada casilla-->
+            <input type="text" id="nombre" required placeholder="tu nombre"> <!--los inputs son los que recolectan la imformacion dependiendo del atributo que se les de-->
+        </label>
+
+
+        <label for="edad"> 
+            <p>2 <span>Cuando naciste?</span> </p>
+             <input type="date" id="edad" required placeholder="tu fecha de nacimiento"> 
+         </label>
+
+         <label for="Horario">
+            <p>3 <span>Que hora es en tu pais?</span> </p>
+            <input type="time" id="Horario" required placeholder="La hora actual">
+         </label>
+
+
+        
+        
+            <p>4 Cual es tu comida favorita entre estas?</p>
+    
+           <input type="radio" id="Pizza" name="Comida_favorita" value="Pizza">
+           <label for="Pizza">Pizza</label><br>
+           <input type="radio" id="Hamburguesa" name="Comida_favorita" value="Hamburguesa">
+           <label for="Hamburguesa">Hamburguesa</label><br>
+           <input type="radio" id="Papas" name="Comida_favorita" value="Papas">
+           <label for="Papas">Papas</label>
+       
+    </form> 
+</body>
+</html>
